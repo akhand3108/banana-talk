@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-yellow: #f6c616;
+  --secondary-yellow: #f4dd4b;
+  --black: #333333;
+  --blue: #115695;
+  --dark-blue: #0c457a;
+}
+
+body {
+  font-size: 20px;
+}
+
+header {
+  text-align: center;
+  background-color: var(--primary-yellow);
+  color: var(--dark-blue);
+  padding: 20px;
+  font-size: 1.1rem;
+}
+
+header nav {
+  font-size: 4rem;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin: 30px;
+  text-align: center;
+}
+
+#text-input {
+  text-align: left;
+  width: 100%;
+  min-height: 20vh;
+  display: block;
+  margin: 0 auto;
+  border: 3px solid var(--blue);
+  padding: 10px;
+  font-size: large;
+  color: var(--blue);
+  word-wrap: normal;
+}
+
+#button-translate {
+  background-color: var(--blue);
+  padding: 1rem 30px;
+  width: max-content;
+  margin: 20px auto;
+  font-size: large;
+  color: var(--primary-yellow);
+  border: none;
+}
+
+#button-clear {
+  background-color: white;
+  padding: 1rem 30px;
+  width: max-content;
+  margin: 20px auto;
+  font-size: large;
+  color: var(--dark-blue);
+  border: 1px solid var(--blue);
+}
+
+#text-output {
+  text-align: left;
+  border: 2px solid var(--blue);
+  padding: 20px;
+  min-height: 15vh;
+  color: var(--blue);
+}
