@@ -21,7 +21,7 @@ function translateHandler(event) {
       outputBox.innerText = data.contents.translated
     })
     .catch((error) => {
-      alert("Some Error ocurred"), console.log(error)
+      alert(error.message), console.log(error)
     })
 }
 
