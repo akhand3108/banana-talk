@@ -5,21 +5,23 @@
 }
 
 :root {
-  --primary-yellow: #f6c616;
-  --secondary-yellow: #f4dd4b;
+  --primary-blue: #1d3557;
+  --secondary-blue: #219ebc;
   --black: #333333;
-  --blue: #115695;
-  --dark-blue: #0c457a;
+  --yellow: #ffba08;
+  --dark-yellow: #f77f00;
 }
 
 body {
   font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 100vh;
 }
 
 header {
   text-align: center;
-  background-color: var(--primary-yellow);
-  color: var(--dark-blue);
+  background-color: var(--primary-blue);
+  color: white;
   padding: 20px;
   font-size: 1.1rem;
 }
@@ -43,25 +45,27 @@ main {
 }
 
 #text-input {
+  font-size: 2rem;
   text-align: left;
   width: 100%;
   min-height: 20vh;
   display: block;
   margin: 0 auto;
-  border: 3px solid var(--blue);
+  border: 3px solid var(--dark-yellow);
   padding: 10px;
   font-size: large;
-  color: var(--blue);
+  color: var(--secondary-blue);
   word-wrap: normal;
+  font-weight: 700;
 }
 
 #button-translate {
-  background-color: var(--blue);
+  background-color: var(--yellow);
   padding: 1rem 30px;
   width: max-content;
   margin: 20px auto;
   font-size: large;
-  color: var(--primary-yellow);
+  color: var(--primary-blue);
   border: none;
 }
 
@@ -71,14 +75,15 @@ main {
   width: max-content;
   margin: 20px auto;
   font-size: large;
-  color: var(--dark-blue);
-  border: 1px solid var(--blue);
+  color: var(--dark-yellow);
+  border: 1px solid var(--yellow);
+  border-radius: 0.5rem;
 }
 
 #text-output {
   text-align: left;
-  border: 2px solid var(--blue);
+  border: 2px solid var(--secondary-blue);
   padding: 20px;
   min-height: 15vh;
-  color: var(--blue);
+  color: var(--dark-yellow);
 }
